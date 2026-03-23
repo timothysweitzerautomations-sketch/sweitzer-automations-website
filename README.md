@@ -21,7 +21,26 @@ Open the URL Vite prints (usually **http://127.0.0.1:5173/**).
 npm run build
 ```
 
-Output goes to **`dist/`**. Upload that folder to your host, or point Netlify/Vercel/etc. at this repo and use `npm run build` as the build command with **`dist`** as the publish directory.
+Output goes to **`dist/`**. Upload that folder to your host, or use Netlify (below).
+
+## Deploy on Netlify (recommended)
+
+This repo includes **`netlify.toml`**: build command `npm run build`, publish folder **`dist`**, Node **20**.
+
+### One-time setup
+
+1. Sign up at **[netlify.com](https://www.netlify.com/)** (use **Sign up with GitHub** so Netlify can read your repo).
+2. **Add new site** → **Import an existing project** → **GitHub** → authorize Netlify if asked.
+3. Pick your repository (**`sweitzer-automations-website`**). Netlify should read **`netlify.toml`** automatically.
+4. Click **Deploy site**. Wait for the build; you’ll get a random URL like **`something.netlify.app`**.
+5. **Custom domain:** **Site configuration** → **Domain management** → **Add custom domain** → enter **`sweitzerautomations.com`** (and **`www`** if you want both).
+6. Netlify shows **DNS records** to add at your domain registrar (where you bought the domain). Add the **A** / **CNAME** values they give you, then wait for DNS (often minutes, sometimes longer).
+7. **HTTPS:** Netlify usually provisions a free certificate automatically once DNS is correct.
+8. **Contact form:** The site form uses **`data-netlify="true"`**. After deploy, open **Forms** in the Netlify dashboard; submissions appear there. You can add **email notifications** under **Forms** → **Notifications**.
+
+### After you change the site
+
+Push to **`main`** on GitHub; Netlify rebuilds and deploys automatically (if continuous deployment is enabled—it is by default for Git-connected sites).
 
 ## Put this project on GitHub
 
