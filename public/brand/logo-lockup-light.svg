@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" fill="none">
+  <title>Sweitzer Automations  for light backgrounds</title>
+  <rect width="300" height="64" fill="#ffffff"/>
+  <defs>
+    <linearGradient id="ll-edge" x1="6" y1="8" x2="42" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(4 8) scale(1)">
+    <rect x="3" y="3" width="42" height="42" rx="11" stroke="url(#ll-edge)" stroke-width="1.25" fill="rgba(37,99,235,0.06)"/>
+    <path
+      d="M24 9.5 36.5 16.75v14.5L24 38.5 11.5 31.25v-14.5L24 9.5z"
+      stroke="url(#ll-edge)"
+      stroke-width="1.35"
+      stroke-linejoin="round"
+      fill="rgba(241,245,249,0.95)"
+    />
+    <path
+      d="M24 16.5l8.2 7.5-8.2 7.5-8.2-7.5 8.2-7.5z"
+      stroke="#64748b"
+      stroke-width="1.15"
+      stroke-linejoin="round"
+      fill="none"
+      opacity="0.9"
+    />
+    <circle cx="24" cy="24" r="3.25" fill="#2563eb"/>
+    <circle cx="24" cy="14.5" r="2" fill="#0f172a" opacity="0.85"/>
+    <circle cx="16.8" cy="29.2" r="2" fill="#0f172a" opacity="0.85"/>
+    <circle cx="31.2" cy="29.2" r="2" fill="#0f172a" opacity="0.85"/>
+  </g>
+  <text
+    x="64"
+    y="30"
+    fill="#0c0f14"
+    font-family="DM Sans, system-ui, -apple-system, sans-serif"
+    font-size="21"
+    font-weight="700"
+    letter-spacing="-0.02em"
+  >
+    Sweitzer
+  </text>
+  <text
+    x="64"
+    y="48"
+    fill="#475569"
+    font-family="DM Sans, system-ui, -apple-system, sans-serif"
+    font-size="21"
+    font-weight="500"
+    letter-spacing="-0.02em"
+  >
+    Automations
+  </text>
+</svg>

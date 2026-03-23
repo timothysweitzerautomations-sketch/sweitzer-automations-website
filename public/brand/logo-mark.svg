@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="bm-sa-edge" x1="6" y1="8" x2="42" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3d9cf5"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="42" height="42" rx="11" stroke="url(#bm-sa-edge)" stroke-width="1.25" fill="rgba(61,156,245,0.08)"/>
+  <path
+    d="M24 9.5 36.5 16.75v14.5L24 38.5 11.5 31.25v-14.5L24 9.5z"
+    stroke="url(#bm-sa-edge)"
+    stroke-width="1.35"
+    stroke-linejoin="round"
+    fill="rgba(18,23,34,0.85)"
+  />
+  <path
+    d="M24 16.5l8.2 7.5-8.2 7.5-8.2-7.5 8.2-7.5z"
+    stroke="#c8d0dc"
+    stroke-width="1.15"
+    stroke-linejoin="round"
+    fill="none"
+    opacity="0.85"
+  />
+  <circle cx="24" cy="24" r="3.25" fill="#3d9cf5"/>
+  <circle cx="24" cy="14.5" r="2" fill="#e8eaef" opacity="0.95"/>
+  <circle cx="16.8" cy="29.2" r="2" fill="#e8eaef" opacity="0.95"/>
+  <circle cx="31.2" cy="29.2" r="2" fill="#e8eaef" opacity="0.95"/>
+</svg>

@@ -1,0 +1,5 @@
+Sweitzer Automations — downloads folder
+
+This file is an example. Add your real product files (ZIP, PDF, installers, documentation, etc.) to the public/downloads/ folder, then link them from the Downloads section in index.html and run npm run build before you deploy.
+
+Also update the “Project snapshot — 3-22-26” section on the homepage when you add major offerings so the site stays in sync with your Sweitzer Automations project.

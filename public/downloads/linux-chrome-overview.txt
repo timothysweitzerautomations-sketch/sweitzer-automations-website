@@ -1,0 +1,30 @@
+Sweitzer Automations — Linux & Chrome (overview)
+================================================
+
+Source repository (clone or download ZIP):
+https://github.com/timothysweitzerautomations-sketch/Sweitzer-Automations-3-22-26
+
+LINUX
+-----
+Revenue Pulse and Flip profit tracker: same browser dashboards as on other platforms.
+
+  • Recommended: Tk desktop launcher
+      ./linux/run_dashboards.sh
+
+  • Browser only (no Tk):
+      ./linux/serve_dashboards.sh
+    Default: http://127.0.0.1:8765/
+
+Full instructions: LINUX.md in the repo root.
+https://github.com/timothysweitzerautomations-sketch/Sweitzer-Automations-3-22-26/blob/main/LINUX.md
+
+CHROME (extension)
+------------------
+Manifest V3 extension with bundled dashboards — no local http.server required.
+
+  1. Chrome → Extensions → Developer mode → Load unpacked
+  2. Select the chrome_extension folder from the repo
+  3. Use the toolbar popup to open Revenue Pulse or Flip tracker
+
+Full instructions: CHROME.md in the repo root.
+https://github.com/timothysweitzerautomations-sketch/Sweitzer-Automations-3-22-26/blob/main/CHROME.md

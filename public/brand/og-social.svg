@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <title>Sweitzer Automations  social preview</title>
+  <defs>
+    <radialGradient id="og-bg" cx="50%" cy="0%" r="80%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="rgba(61,156,245,0.18)"/>
+      <stop offset="55%" stop-color="#0c0f14"/>
+    </radialGradient>
+    <linearGradient id="og-edge" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#3d9cf5"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0c0f14"/>
+  <rect width="1200" height="630" fill="url(#og-bg)"/>
+  <g transform="translate(120 195) scale(3.2)">
+    <rect x="3" y="3" width="42" height="42" rx="11" stroke="url(#og-edge)" stroke-width="1.25" fill="rgba(61,156,245,0.08)"/>
+    <path
+      d="M24 9.5 36.5 16.75v14.5L24 38.5 11.5 31.25v-14.5L24 9.5z"
+      stroke="url(#og-edge)"
+      stroke-width="1.35"
+      stroke-linejoin="round"
+      fill="rgba(18,23,34,0.85)"
+    />
+    <path
+      d="M24 16.5l8.2 7.5-8.2 7.5-8.2-7.5 8.2-7.5z"
+      stroke="#c8d0dc"
+      stroke-width="1.15"
+      stroke-linejoin="round"
+      fill="none"
+      opacity="0.85"
+    />
+    <circle cx="24" cy="24" r="3.25" fill="#3d9cf5"/>
+    <circle cx="24" cy="14.5" r="2" fill="#e8eaef" opacity="0.95"/>
+    <circle cx="16.8" cy="29.2" r="2" fill="#e8eaef" opacity="0.95"/>
+    <circle cx="31.2" cy="29.2" r="2" fill="#e8eaef" opacity="0.95"/>
+  </g>
+  <text
+    x="120"
+    y="420"
+    fill="#e8eaef"
+    font-family="DM Sans, system-ui, -apple-system, sans-serif"
+    font-size="52"
+    font-weight="700"
+    letter-spacing="-0.03em"
+  >
+    Sweitzer Automations
+  </text>
+  <text
+    x="120"
+    y="490"
+    fill="#9aa3b2"
+    font-family="DM Sans, system-ui, -apple-system, sans-serif"
+    font-size="28"
+    font-weight="500"
+  >
+    Industrial automation &amp; control · Post Falls, ID area
+  </text>
+</svg>
