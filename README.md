@@ -2,6 +2,10 @@
 
 Static marketing site for [sweitzerautomations.com](https://sweitzerautomations.com): Vite + TypeScript, brand assets, contact form (Netlify), and a **Software** section linking to the open-source Linux and Chrome tools.
 
+**Netlify Forms:** The live contact form is in **`index.html`**. **`public/__forms.html`** duplicates the same fields in a hidden static page so Netlify always detects the **`contact`** form at build time. Do not delete **`__forms.html`** unless you confirm Forms still register.
+
+**Netlify cloud agent:** Copy-paste prompt for the Netlify AI agent is in **[`NETLIFY_AGENT_PROMPT.md`](NETLIFY_AGENT_PROMPT.md)** (includes correct operator name **Timothy Sweitzer**).
+
 ## Requirements
 
 - **Node.js** 18+ (includes `npm`)

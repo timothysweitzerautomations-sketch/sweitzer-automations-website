@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Netlify Forms — detection only</title>
+  </head>
+  <body>
+    <!--
+      Netlify registers forms at deploy time by scanning static HTML.
+      This file mirrors the contact form fields so the "contact" form is always registered.
+      The user-facing form lives in index.html.
+    -->
+    <form
+      name="contact"
+      method="post"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      aria-hidden="true"
+      style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p>
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+      <label><input type="text" name="name" /></label>
+      <label><input type="email" name="email" /></label>
+      <label><input type="text" name="company" /></label>
+      <label><textarea name="message"></textarea></label>
+    </form>
+  </body>
+</html>
