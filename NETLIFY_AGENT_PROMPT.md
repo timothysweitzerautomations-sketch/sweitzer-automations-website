@@ -10,7 +10,7 @@ Use this in Netlify’s agent field when you want help maintaining this site. **
 
 **Goals:** Reliable deploys from **`main`**, custom domain with **HTTPS**, working form submissions and notifications, performance, accessibility, and **SEO** (meta, Open Graph / Twitter, `robots.txt`, `sitemap.xml`).
 
-**Preserve:** Hero, About, Services, Service area, Approach, Project snapshot, Software (Linux + Chrome — links to **Sweitzer-Automations-3-22-26** on GitHub), Downloads, Contact. Keep the dark theme and typography; do not break GitHub links.
+**Preserve:** Hero, About, Services, Service area, Approach, **Capabilities** (honest skills list—not fictional case studies), Project snapshot, Software (Linux + Chrome — links to **Sweitzer-Automations-3-22-26** on GitHub), Downloads, Contact. Keep the dark theme and typography; do not break GitHub links. **Do not** present made-up “representative work” or client projects as completed jobs.
 
 **Constraints:** Do not remove Netlify Forms wiring without an equivalent. Prefer small, reviewable changes.
 
