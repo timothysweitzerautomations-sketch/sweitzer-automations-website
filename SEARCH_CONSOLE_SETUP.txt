@@ -1,0 +1,33 @@
+Google Search Console — steps (you must complete in your browser)
+================================================================
+
+Prerequisite: https://sweitzerautomations.com loads with HTTPS, and
+https://sweitzerautomations.com/sitemap.xml returns XML (not 404).
+If the domain does not resolve, finish Netlify custom domain + DNS first.
+
+1) Go to https://search.google.com/search-console and sign in.
+
+2) Add property → URL prefix → https://sweitzerautomations.com
+
+3) Verify ownership (pick ONE):
+
+   A) DNS TXT record (good if Netlify DNS or registrar manages DNS)
+      - Search Console shows a TXT name/value — add it where your DNS is hosted,
+        wait a few minutes, click Verify.
+
+   B) HTML file
+      - Google gives a filename like googleXXXXXXXX.html with fixed contents.
+      - Put that file in this repo under public/ so it deploys to the site root.
+      - Commit, push, wait for Netlify deploy, then click Verify in Search Console.
+
+   C) HTML tag
+      - Google gives <meta name="google-site-verification" content="..."/>
+      - Add that meta tag inside <head> in index.html once, deploy, then Verify.
+
+4) After verified: Sitemaps → Add new sitemap → enter: sitemap.xml → Submit.
+
+5) Optional: add the same Google account under Settings → Users if needed.
+
+I cannot run steps 1–4 for you — they require your Google account.
+The AI assistant can add the verification file or meta tag after you paste
+the exact string Google gives you.
