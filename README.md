@@ -1,5 +1,7 @@
 # Sweitzer Automations — public website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5481e62b-80c0-4b7d-a7f5-f6c6ff1dfcb2/deploy-status)](https://app.netlify.com/projects/enchanting-dasik-895391/deploys)
+
 Static marketing site for [sweitzerautomations.com](https://sweitzerautomations.com): Vite + TypeScript, brand assets, contact form (Netlify), and a **Software** section linking to the open-source Linux and Chrome tools.
 
 **Netlify Forms:** The live contact form is in **`index.html`**. **`public/__forms.html`** duplicates the same fields in a hidden static page so Netlify always detects the **`contact`** form at build time. Do not delete **`__forms.html`** unless you confirm Forms still register.
