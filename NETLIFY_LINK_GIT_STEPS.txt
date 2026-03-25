@@ -1,0 +1,37 @@
+Connect GitHub to your EXISTING Netlify site (keep sweitzerautomations.com)
+============================================================================
+
+Your repo already has netlify.toml — Netlify should auto-fill:
+  Build command: npm run build
+  Publish directory: dist
+  Node: 20 (from [build.environment] in netlify.toml)
+
+BEFORE YOU START
+- Repo on GitHub: timothysweitzerautomations-sketch/sweitzer-automations-website
+- Branch: main
+- You must push future site edits to GitHub (not only build locally) for auto-deploy.
+
+IN NETLIFY (app.netlify.com)
+1. Open the site that has your custom domain (e.g. enchanting-dasik-895391).
+2. Site configuration → Build & deploy (or “Build & deploy” in the left nav).
+3. Continuous deployment → “Link repository” / “Connect to Git provider”.
+4. Choose GitHub → authorize Netlify if asked → pick repository:
+      sweitzer-automations-website
+5. Branch to deploy: main
+6. Confirm build settings (should match netlify.toml). Do NOT set publish to repo root — must be dist.
+7. Save / Deploy site. Wait for the first build to finish (green check).
+
+AFTER IT WORKS
+- Production deploys run on every push to main.
+- You can stop using drag-and-drop for production (Git is now source of truth).
+- Forms: check Site dashboard → Forms → contact still listed after first Git deploy.
+
+IF “Link repository” IS MISSING OR GRAYED OUT
+- Use Netlify Help / docs for “link site to git” — UI labels change.
+- Alternative: Add new site → Import from Git → same repo; add custom domain
+  to the NEW site and remove it from the old Drop-only site (only if you cannot link).
+
+TROUBLESHOOTING BUILD FAILURES
+- Build log: ensure Node runs install + build; error “tsc not found” → Netlify runs
+  npm install (package.json must list typescript + vite — it does).
+- Wrong page on live URL: clear cache or trigger “Clear cache and deploy” once.
