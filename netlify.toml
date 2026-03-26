@@ -1,3 +1,4 @@
+# Netlify: build static site from repo root. (Git UI: same command + publish dir.)
 # https://docs.netlify.com/configure-builds/file-based-configuration/
 [build]
   command = "npm run build"
