@@ -7,10 +7,16 @@
       name="description"
       content="Sweitzer Automations — Timothy Sweitzer. Open-source software, browser dashboards, and automation tooling. Based in Post Falls, ID; remote work across the United States."
     />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
     <link rel="canonical" href="https://sweitzerautomations.com/" />
     <meta name="theme-color" content="#0c0f14" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sweitzerautomations.com/" />
+    <meta property="og:site_name" content="Sweitzer Automations" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="Sweitzer Automations" />
     <meta
       property="og:description"
@@ -37,19 +43,47 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Sweitzer Automations",
-        "url": "https://sweitzerautomations.com/",
-        "logo": "https://sweitzerautomations.com/brand/logo-mark.svg",
-        "description": "Software and automation tooling by Timothy Sweitzer. Open-source dashboards, browser utilities, and workflow tools. Based in Post Falls, Idaho 83854; remote work in the United States.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Post Falls",
-          "addressRegion": "ID",
-          "postalCode": "83854",
-          "addressCountry": "US"
-        },
-        "areaServed": { "@type": "Country", "name": "United States" }
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://sweitzerautomations.com/#website",
+            "url": "https://sweitzerautomations.com/",
+            "name": "Sweitzer Automations",
+            "description": "Sweitzer Automations — Timothy Sweitzer. Open-source software, browser dashboards, and automation tooling. Based in Post Falls, ID; remote work across the United States.",
+            "inLanguage": "en-US",
+            "publisher": { "@id": "https://sweitzerautomations.com/#business" }
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://sweitzerautomations.com/#business",
+            "name": "Sweitzer Automations",
+            "url": "https://sweitzerautomations.com/",
+            "logo": "https://sweitzerautomations.com/brand/logo-mark.svg",
+            "image": "https://sweitzerautomations.com/brand/og-social.svg",
+            "description": "Software and automation tooling by Timothy Sweitzer. Open-source dashboards, browser utilities, and workflow tools. Based in Post Falls, Idaho 83854; remote work in the United States.",
+            "telephone": "+1-208-295-8750",
+            "email": "hello@sweitzerautomations.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Post Falls",
+              "addressRegion": "ID",
+              "postalCode": "83854",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 47.7199,
+              "longitude": -116.9516
+            },
+            "areaServed": { "@type": "Country", "name": "United States" },
+            "sameAs": ["https://github.com/timothysweitzerautomations-sketch"],
+            "founder": {
+              "@type": "Person",
+              "name": "Timothy Sweitzer",
+              "url": "https://sweitzerautomations.com/#about"
+            }
+          }
+        ]
       }
     </script>
   </head>
@@ -339,8 +373,9 @@
             </li>
             <li>
               <strong>Contact.</strong>
-              Inquiry form + email
-              <a href="mailto:hello@sweitzerautomations.com">hello@sweitzerautomations.com</a>
+              Inquiry form, email
+              <a href="mailto:hello@sweitzerautomations.com">hello@sweitzerautomations.com</a>, and phone
+              <a href="tel:+12082958750">(208) 295-8750</a>
               — hook the form to your host (e.g. Netlify) when you deploy.
             </li>
             <li>
@@ -618,7 +653,10 @@
             <a
               href="mailto:hello@sweitzerautomations.com"
               title="Email Sweitzer Automations at hello@sweitzerautomations.com"
-            >Sweitzer Automations</a><span class="contact-email-plain"> — hello@sweitzerautomations.com</span>
+            >Sweitzer Automations</a><span class="contact-email-plain"> — hello@sweitzerautomations.com</span><br />
+            <span class="contact-phone-line"
+              >Call or text:
+              <a href="tel:+12082958750" title="Call or text (208) 295-8750">(208) 295-8750</a></span>
           </p>
         </div>
       </section>
@@ -660,6 +698,7 @@
         </div>
         <p class="footer-copy">
           &copy; <span id="year"></span> Sweitzer Automations · Post Falls, ID · 83854 ·
+          <a href="tel:+12082958750" title="Call or text (208) 295-8750">(208) 295-8750</a> ·
           <abbr title="Pacific Time">PT</abbr>. All rights reserved.
         </p>
       </div>

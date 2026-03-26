@@ -879,6 +879,15 @@ a:focus-visible {
   font-weight: 400;
 }
 
+.contact-phone-line {
+  display: inline-block;
+  margin-top: 0.65rem;
+}
+
+.contact-phone-line a {
+  font-variant-numeric: tabular-nums;
+}
+
 /* Footer */
 
 .site-footer {
@@ -929,6 +938,17 @@ a:focus-visible {
   margin: 0;
   font-size: 0.875rem;
   color: var(--muted);
+}
+
+.footer-copy a {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.footer-copy a:hover {
+  text-decoration: underline;
 }
 
 @media (prefers-reduced-motion: reduce) {
