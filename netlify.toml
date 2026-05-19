@@ -6,3 +6,14 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# Pretty URL for Play Console / Mint Check TCG privacy policy
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy/"
+  to = "/privacy.html"
+  status = 200

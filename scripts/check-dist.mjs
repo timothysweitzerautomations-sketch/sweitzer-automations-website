@@ -2,6 +2,7 @@ import { existsSync } from "node:fs";
 
 const required = [
   "dist/index.html",
+  "dist/privacy.html",
   "dist/googleec3213cb4652b237.html",
   "dist/robots.txt",
   "dist/sitemap.xml",
